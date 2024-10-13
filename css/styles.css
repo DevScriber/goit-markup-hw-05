@@ -42,9 +42,7 @@ p {
 	margin: 0;
 }
 
-a {
-	display: block;
-}
+
 
 button {
 	display: block;
@@ -639,7 +637,11 @@ header .header_nav {
 	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
+.form-input:checked {
+border: none;
+background-color: var(--pressed-state);
+fill: var(--light);
+}
 
 .form-input:focus {
 	border-color: #4D5AE5;
@@ -684,8 +686,11 @@ header .header_nav {
 .comment-form:focus {
 border-color: #4D5AE5;
 }
+.privacy-policy-link {
+color: var(--primary-brand);
+}
 
-.privacy-link {
+.privacy-icon {
 width: 16px;
 height: 16px;
 border: 1px solid rgba(46, 47, 66, 0.4);
