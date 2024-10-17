@@ -10,6 +10,7 @@
 	--main-bgc: #FFFFFF;
 	--modal-bgc: #FCFCFC;
 }
+
 body {
 	font-family: "Roboto", sans-serif;
 	color: #434455;
@@ -25,6 +26,11 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 
+a {
+	text-decoration: none;
+	display: block;
+}
+
 ul, ol {
 	padding: 0;
 	margin: 0;
@@ -36,6 +42,7 @@ li {
 
 img {
 	display: block;
+	max-width: 100%
 }
 
 p {
@@ -190,6 +197,7 @@ header .header_nav {
 	padding: 188px 0;
 	background-position: center;
 	max-width: 1440px;
+	margin: 0 auto;
 }
 
 .slogan {
@@ -244,6 +252,11 @@ header .header_nav {
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
+}
+
+.features-section .list-title,
+.features-section .list-text {
+	text-align: left;
 }
 
 .features-list {
@@ -392,7 +405,7 @@ header .header_nav {
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-image-box:hover .portfolio-overlay {
+.portfolio-card:hover .portfolio-overlay {
 	transform: translateY(0);
 }
 
@@ -443,6 +456,7 @@ header .header_nav {
 	display: inline-block;
 	margin-bottom: 16px;
 	color: #4d5ae5;
+	margin-right: 0;
 }
 
 .footer-accent {
@@ -705,6 +719,7 @@ display: inline-flex;
 align-items: center;
 justify-content: center;
 fill: transparent;
+margin-right: 8px;
 }
 
 .button-submit {
